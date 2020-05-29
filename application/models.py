@@ -9,4 +9,4 @@ class Candidate(models.Model):
     skills =  models.CharField(max_length=500)
 
     def __str__(self):
-        return self.fname
+        return self.email
