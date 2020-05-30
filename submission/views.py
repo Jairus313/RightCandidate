@@ -7,6 +7,5 @@ from application.models import Candidate
 def submit(request):
     candidates = Candidate.objects.all() 
     context = {"candidates":candidates}
-    skills = ["python","django"]
 
     return render(request,"submission.html",{"candidates":candidates})

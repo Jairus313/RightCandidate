@@ -21,15 +21,35 @@
             <th scope="col"> CANDIDATE EMAIL </th>
             <th scope="col"> CANDIDATE PHONE </th>
             <th scope="col"> CANDIDATE SKILLS </th>
+            <th scope="col"> COMPACTIBILITY (%) </th>
         </thead>   
         <tbody>
         {% for candidate in candidates %}
-            <tr>
-            <th scope="row">{{candidate.fname}}</th>
-            <td>{{candidate.email}}</td>
-            <td>{{candidate.phone}}</td>
-            <td>{{candidate.skills}}</td>
-            </tr>
+            {% if candidate.compactibility > 79 %}
+                <tr>
+                <th scope="row" class="bg-success">{{candidate.fname}}</th>
+                <td class="bg-success">{{candidate.email}}</td>
+                <td class="bg-success">{{candidate.phone}}</td>
+                <td class="bg-success">{{candidate.skills}}</td>
+                <td class="bg-success">{{candidate.compactibility}}</td>
+                </tr>
+            {% elif candidate.compactibility > 40 %} 
+                <tr>
+                <th scope="row" class="bg-warning">{{candidate.fname}}</th>
+                <td class="bg-warning">{{candidate.email}}</td>
+                <td class="bg-warning">{{candidate.phone}}</td>
+                <td class="bg-warning">{{candidate.skills}}</td>
+                <td class="bg-warning">{{candidate.compactibility}}</td>
+                </tr>  
+            {% else %} 
+                <tr>
+                <th scope="row" class="bg-danger">{{candidate.fname}}</th>
+                <td class="bg-danger">{{candidate.email}}</td>
+                <td class="bg-danger">{{candidate.phone}}</td>
+                <td class="bg-danger">{{candidate.skills}}</td>
+                <td class="bg-danger">{{candidate.compactibility}}</td>
+                </tr>    
+            {% endif %}
         {% endfor %}
         </tbody>
     </table>

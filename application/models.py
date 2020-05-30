@@ -7,6 +7,7 @@ class Candidate(models.Model):
     phone =  models.IntegerField()
     email =  models.CharField(max_length=100) 
     skills =  models.CharField(max_length=500)
+    compactibility = models.IntegerField(default="0")  
 
     def __str__(self):
         return self.fname
