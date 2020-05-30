@@ -26,4 +26,4 @@
   - **Pyhton(backend)**
   - **Django(RestAPI)**
   - **HTML, CSS and Bootstrap(frontend)**
-  
+  - **SQLite(Database)**
