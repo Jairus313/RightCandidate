@@ -1,6 +1,6 @@
 # RightCandidate
 
-## This is dynamic django CRUD app which got two pages(apps), One for applying jobs and another for displaying it with filtering appliants based on their skillsets.
+## This is a dynamic django CRUD app which has two pages(apps), One for applying jobs and another for displaying it with filtering applicants based on their skillsets.
 
 
 - ### Application Page
