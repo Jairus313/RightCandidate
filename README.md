@@ -25,5 +25,5 @@
 ## Resources used:
   - **Pyhton(backend)**
   - **Django(RestAPI)**
-  - **HTML, CSS and Bootstrap(frontend)**
+  - **HTML, CSS, JavaScript and Bootstrap(frontend)**
   - **SQLite(Database)**
